@@ -1,3 +1,8 @@
+#hiding api key, mcdw file and random data file
+key.json
+2017_cdqt_data.txt
+mcdw.20230530.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
