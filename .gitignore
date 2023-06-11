@@ -3,7 +3,8 @@ key.json
 2017_cdqt_data.txt
 mcdw.20230530.csv
 usda_census.csv
-
+regions_eda.csv
+yield_usda_census.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
