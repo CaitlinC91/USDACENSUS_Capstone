@@ -1,0 +1,2542 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.23.0507.0955                               -->
+<workbook original-version='18.1' source-build='2022.4.3 (20224.23.0507.0955)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='weather' inline='true' name='federated.0hrevd103jzom912jo48006503or' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='weather' name='textscan.18et6t51q7jxju18vzugf1v8ozua'>
+            <connection class='textscan' directory='C:/Users/Aaron/Documents/DA8/Projects/USDACENSUS_Capstone/data' filename='weather.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.18et6t51q7jxju18vzugf1v8ozua' name='regions_eda.csv' table='[regions_eda#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='class_desc' ordinal='0' />
+            <column datatype='string' name='group_desc' ordinal='1' />
+            <column datatype='string' name='prodn_practice_desc' ordinal='2' />
+            <column datatype='string' name='state_name' ordinal='3' />
+            <column datatype='integer' name='year' ordinal='4' />
+            <column datatype='string' name='short_desc' ordinal='5' />
+            <column datatype='string' name='sector_desc' ordinal='6' />
+            <column datatype='string' name='domaincat_desc' ordinal='7' />
+            <column datatype='string' name='cv (%)' ordinal='8' />
+            <column datatype='string' name='commodity_desc' ordinal='9' />
+            <column datatype='string' name='state_alpha' ordinal='10' />
+            <column datatype='string' name='freq_desc' ordinal='11' />
+            <column datatype='integer' name='country_code' ordinal='12' />
+            <column datatype='string' name='util_practice_desc' ordinal='13' />
+            <column datatype='string' name='statisticcat_desc' ordinal='14' />
+            <column datatype='string' name='unit_desc' ordinal='15' />
+            <column datatype='string' name='agg_level_desc' ordinal='16' />
+            <column datatype='string' name='domain_desc' ordinal='17' />
+            <column datatype='real' name='value' ordinal='18' />
+            <column datatype='string' name='reference_period_desc' ordinal='19' />
+            <column datatype='string' name='region' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.18et6t51q7jxju18vzugf1v8ozua' name='weather.csv' table='[weather#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='date' name='Date' ordinal='1' />
+              <column datatype='real' name='tmax' ordinal='2' />
+              <column datatype='real' name='tmin' ordinal='3' />
+              <column datatype='real' name='prcp' ordinal='4' />
+              <column datatype='string' name='station' ordinal='5' />
+              <column datatype='string' name='ID' ordinal='6' />
+              <column datatype='real' name='lat' ordinal='7' />
+              <column datatype='real' name='lon' ordinal='8' />
+              <column datatype='string' name='admin1' ordinal='9' />
+              <column datatype='string' name='region' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.18et6t51q7jxju18vzugf1v8ozua' name='regions_eda.csv' table='[regions_eda#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='class_desc' ordinal='0' />
+              <column datatype='string' name='group_desc' ordinal='1' />
+              <column datatype='string' name='prodn_practice_desc' ordinal='2' />
+              <column datatype='string' name='state_name' ordinal='3' />
+              <column datatype='integer' name='year' ordinal='4' />
+              <column datatype='string' name='short_desc' ordinal='5' />
+              <column datatype='string' name='sector_desc' ordinal='6' />
+              <column datatype='string' name='domaincat_desc' ordinal='7' />
+              <column datatype='string' name='cv (%)' ordinal='8' />
+              <column datatype='string' name='commodity_desc' ordinal='9' />
+              <column datatype='string' name='state_alpha' ordinal='10' />
+              <column datatype='string' name='freq_desc' ordinal='11' />
+              <column datatype='integer' name='country_code' ordinal='12' />
+              <column datatype='string' name='util_practice_desc' ordinal='13' />
+              <column datatype='string' name='statisticcat_desc' ordinal='14' />
+              <column datatype='string' name='unit_desc' ordinal='15' />
+              <column datatype='string' name='agg_level_desc' ordinal='16' />
+              <column datatype='string' name='domain_desc' ordinal='17' />
+              <column datatype='real' name='value' ordinal='18' />
+              <column datatype='string' name='reference_period_desc' ordinal='19' />
+              <column datatype='string' name='region' ordinal='20' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Date]' value='[weather.csv].[Date]' />
+          <map key='[F1]' value='[weather.csv].[F1]' />
+          <map key='[ID]' value='[weather.csv].[ID]' />
+          <map key='[admin1]' value='[weather.csv].[admin1]' />
+          <map key='[agg_level_desc]' value='[regions_eda.csv].[agg_level_desc]' />
+          <map key='[class_desc]' value='[regions_eda.csv].[class_desc]' />
+          <map key='[commodity_desc]' value='[regions_eda.csv].[commodity_desc]' />
+          <map key='[country_code]' value='[regions_eda.csv].[country_code]' />
+          <map key='[cv (%)]' value='[regions_eda.csv].[cv (%)]' />
+          <map key='[domain_desc]' value='[regions_eda.csv].[domain_desc]' />
+          <map key='[domaincat_desc]' value='[regions_eda.csv].[domaincat_desc]' />
+          <map key='[freq_desc]' value='[regions_eda.csv].[freq_desc]' />
+          <map key='[group_desc]' value='[regions_eda.csv].[group_desc]' />
+          <map key='[lat]' value='[weather.csv].[lat]' />
+          <map key='[lon]' value='[weather.csv].[lon]' />
+          <map key='[prcp]' value='[weather.csv].[prcp]' />
+          <map key='[prodn_practice_desc]' value='[regions_eda.csv].[prodn_practice_desc]' />
+          <map key='[reference_period_desc]' value='[regions_eda.csv].[reference_period_desc]' />
+          <map key='[region (regions_eda.csv)]' value='[regions_eda.csv].[region]' />
+          <map key='[region]' value='[weather.csv].[region]' />
+          <map key='[sector_desc]' value='[regions_eda.csv].[sector_desc]' />
+          <map key='[short_desc]' value='[regions_eda.csv].[short_desc]' />
+          <map key='[state_alpha]' value='[regions_eda.csv].[state_alpha]' />
+          <map key='[state_name]' value='[regions_eda.csv].[state_name]' />
+          <map key='[station]' value='[weather.csv].[station]' />
+          <map key='[statisticcat_desc]' value='[regions_eda.csv].[statisticcat_desc]' />
+          <map key='[tmax]' value='[weather.csv].[tmax]' />
+          <map key='[tmin]' value='[weather.csv].[tmin]' />
+          <map key='[unit_desc]' value='[regions_eda.csv].[unit_desc]' />
+          <map key='[util_practice_desc]' value='[regions_eda.csv].[util_practice_desc]' />
+          <map key='[value]' value='[regions_eda.csv].[value]' />
+          <map key='[year]' value='[regions_eda.csv].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tmax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tmax]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>tmax</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tmin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tmin]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>tmin</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prcp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[prcp]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>prcp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[station]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>station</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lon]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>lon</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admin1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[admin1]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>admin1</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>class_desc</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>group_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[group_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>group_desc</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prodn_practice_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[prodn_practice_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>prodn_practice_desc</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state_name]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>state_name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>short_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[short_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>short_desc</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sector_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>sector_desc</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domaincat_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[domaincat_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>domaincat_desc</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cv (%)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cv (%)]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>cv (%)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commodity_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[commodity_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>commodity_desc</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_alpha</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state_alpha]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>state_alpha</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freq_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[freq_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>freq_desc</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[country_code]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>country_code</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>util_practice_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[util_practice_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>util_practice_desc</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>statisticcat_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[statisticcat_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>statisticcat_desc</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unit_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[unit_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>unit_desc</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agg_level_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[agg_level_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>agg_level_desc</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domain_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[domain_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>domain_desc</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reference_period_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reference_period_desc]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>reference_period_desc</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region (regions_eda.csv)]</local-name>
+            <parent-name>[regions_eda.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='W_Year' datatype='integer' datatype-customized='true' name='[Calculation_2405766665232306176]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='YEAR([Date])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='regions_eda.csv' datatype='table' name='[__tableau_internal_object_id__].[regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='weather.csv' datatype='table' name='[__tableau_internal_object_id__].[weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62]' role='measure' type='quantitative' />
+      <column caption='Admin1' datatype='string' name='[admin1]' role='dimension' type='nominal' />
+      <column caption='Agg Level Desc' datatype='string' name='[agg_level_desc]' role='dimension' type='nominal' />
+      <column caption='Class Desc' datatype='string' name='[class_desc]' role='dimension' type='nominal' />
+      <column caption='Commodity Desc' datatype='string' name='[commodity_desc]' role='dimension' type='nominal' />
+      <column caption='Country Code' datatype='integer' name='[country_code]' role='dimension' type='ordinal' />
+      <column caption='Cv (%)' datatype='string' name='[cv (%)]' role='dimension' type='nominal' />
+      <column caption='Domain Desc' datatype='string' name='[domain_desc]' role='dimension' type='nominal' />
+      <column caption='Domaincat Desc' datatype='string' name='[domaincat_desc]' role='dimension' type='nominal' />
+      <column caption='Freq Desc' datatype='string' name='[freq_desc]' role='dimension' type='nominal' />
+      <column caption='Group Desc' datatype='string' name='[group_desc]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Lon' datatype='real' name='[lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Prcp' datatype='real' name='[prcp]' role='measure' type='quantitative' />
+      <column caption='Prodn Practice Desc' datatype='string' name='[prodn_practice_desc]' role='dimension' type='nominal' />
+      <column caption='Reference Period Desc' datatype='string' name='[reference_period_desc]' role='dimension' type='nominal' />
+      <column caption='Regions' datatype='string' name='[region (regions_eda.csv)]' role='dimension' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Sector Desc' datatype='string' name='[sector_desc]' role='dimension' type='nominal' />
+      <column caption='Short Desc' datatype='string' name='[short_desc]' role='dimension' type='nominal' />
+      <column caption='State Alpha' datatype='string' name='[state_alpha]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Name' datatype='string' name='[state_name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Station' datatype='string' name='[station]' role='dimension' type='nominal' />
+      <column caption='Statisticcat Desc' datatype='string' name='[statisticcat_desc]' role='dimension' type='nominal' />
+      <column caption='Tmax' datatype='real' name='[tmax]' role='measure' type='quantitative' />
+      <column caption='Tmin' datatype='real' name='[tmin]' role='measure' type='quantitative' />
+      <column caption='Unit Desc' datatype='string' name='[unit_desc]' role='dimension' type='nominal' />
+      <column caption='Util Practice Desc' datatype='string' name='[util_practice_desc]' role='dimension' type='nominal' />
+      <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[prcp]' derivation='Avg' name='[avg:prcp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[region (regions_eda.csv)]' derivation='None' name='[none:region (regions_eda.csv):nk]' pivot='key' type='nominal' />
+      <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[prcp]' derivation='Sum' name='[pcdf:sum:prcp:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[prcp]' derivation='Stdev' name='[std:prcp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[prcp]' derivation='Sum' name='[sum:prcp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[prcp]' derivation='Var' name='[var:prcp:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:region:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SOUTH CENTRAL&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;NORTH WEST&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SOUTH WEST&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NORTH EASTERN&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;SOUTH EASTERN&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NORTH CENTRAL&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:region (regions_eda.csv):nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SOUTH CENTRAL&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;NORTH WEST&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SOUTH WEST&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NORTH EASTERN&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;SOUTH EASTERN&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NORTH CENTRAL&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0hrevd103jzom912jo48006503or].[avg:prcp:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0hrevd103jzom912jo48006503or].[pcdf:sum:prcp:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0hrevd103jzom912jo48006503or].[std:prcp:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0hrevd103jzom912jo48006503or].[sum:prcp:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0hrevd103jzom912jo48006503or].[var:prcp:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0hrevd103jzom912jo48006503or].[sum:value:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='Calculation_2405766665232306176' />
+        <field-sort-custom-order field='tmax' />
+        <field-sort-custom-order field='tmin' />
+        <field-sort-custom-order field='prcp' />
+        <field-sort-custom-order field='station' />
+        <field-sort-custom-order field='ID' />
+        <field-sort-custom-order field='lat' />
+        <field-sort-custom-order field='lon' />
+        <field-sort-custom-order field='admin1' />
+        <field-sort-custom-order field='region' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='regions_eda.csv' id='regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7'>
+            <properties context=''>
+              <relation connection='textscan.18et6t51q7jxju18vzugf1v8ozua' name='regions_eda.csv' table='[regions_eda#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='class_desc' ordinal='0' />
+                  <column datatype='string' name='group_desc' ordinal='1' />
+                  <column datatype='string' name='prodn_practice_desc' ordinal='2' />
+                  <column datatype='string' name='state_name' ordinal='3' />
+                  <column datatype='integer' name='year' ordinal='4' />
+                  <column datatype='string' name='short_desc' ordinal='5' />
+                  <column datatype='string' name='sector_desc' ordinal='6' />
+                  <column datatype='string' name='domaincat_desc' ordinal='7' />
+                  <column datatype='string' name='cv (%)' ordinal='8' />
+                  <column datatype='string' name='commodity_desc' ordinal='9' />
+                  <column datatype='string' name='state_alpha' ordinal='10' />
+                  <column datatype='string' name='freq_desc' ordinal='11' />
+                  <column datatype='integer' name='country_code' ordinal='12' />
+                  <column datatype='string' name='util_practice_desc' ordinal='13' />
+                  <column datatype='string' name='statisticcat_desc' ordinal='14' />
+                  <column datatype='string' name='unit_desc' ordinal='15' />
+                  <column datatype='string' name='agg_level_desc' ordinal='16' />
+                  <column datatype='string' name='domain_desc' ordinal='17' />
+                  <column datatype='real' name='value' ordinal='18' />
+                  <column datatype='string' name='reference_period_desc' ordinal='19' />
+                  <column datatype='string' name='region' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='weather.csv' id='weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62'>
+            <properties context=''>
+              <relation connection='textscan.18et6t51q7jxju18vzugf1v8ozua' name='weather.csv' table='[weather#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='real' name='tmax' ordinal='2' />
+                  <column datatype='real' name='tmin' ordinal='3' />
+                  <column datatype='real' name='prcp' ordinal='4' />
+                  <column datatype='string' name='station' ordinal='5' />
+                  <column datatype='string' name='ID' ordinal='6' />
+                  <column datatype='real' name='lat' ordinal='7' />
+                  <column datatype='real' name='lon' ordinal='8' />
+                  <column datatype='string' name='admin1' ordinal='9' />
+                  <column datatype='string' name='region' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[region]' />
+              <expression op='[region (regions_eda.csv)]' />
+            </expression>
+            <first-end-point object-id='weather.csv_BF8BDAD95D2B4D3C80DEA15E60B11C62' />
+            <second-end-point object-id='regions_eda.csv_6C5C82A7FA6D4D67A42749CE928041D7' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Prcp by month - &lt;Page Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Prcp' datatype='real' name='[prcp]' role='measure' type='quantitative' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[prcp]' derivation='Sum' name='[sum:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region:nk]' />
+              <groupfilter function='member' level='[none:region:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[tmn:Date:qk]' included-values='in-range'>
+            <min>#1997-07-02 00:00:00#</min>
+            <max>#2018-02-18 23:59:59#</max>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[tmn:Date:qk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0hrevd103jzom912jo48006503or].[sum:prcp:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:prcp:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[tmn:Date:qk]</cols>
+        <pages>
+          <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{7C7C7400-7F57-4189-A55E-D0B62FDC9709}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Oat Yields</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column caption='Commodity Desc' datatype='string' name='[commodity_desc]' role='dimension' type='nominal' />
+            <column-instance column='[commodity_desc]' derivation='None' name='[none:commodity_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region (regions_eda.csv)]' derivation='None' name='[none:region (regions_eda.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[statisticcat_desc]' derivation='None' name='[none:statisticcat_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Regions' datatype='string' name='[region (regions_eda.csv)]' role='dimension' type='nominal' />
+            <column caption='Statisticcat Desc' datatype='string' name='[statisticcat_desc]' role='dimension' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]'>
+            <groupfilter function='member' level='[none:commodity_desc:nk]' member='&quot;OATS&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region (regions_eda.csv):nk]' />
+              <groupfilter function='member' level='[none:region (regions_eda.csv):nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]'>
+            <groupfilter function='member' level='[none:statisticcat_desc:nk]' member='&quot;YIELD&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[none:year:qk]' included-values='in-range'>
+            <min>2002</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:value:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{83F493D0-F83A-4A2B-964C-36612AD81647}' />
+    </worksheet>
+    <worksheet name='Sheet 13'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Yield Corn</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column caption='Commodity Desc' datatype='string' name='[commodity_desc]' role='dimension' type='nominal' />
+            <column-instance column='[commodity_desc]' derivation='None' name='[none:commodity_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[statisticcat_desc]' derivation='None' name='[none:statisticcat_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Statisticcat Desc' datatype='string' name='[statisticcat_desc]' role='dimension' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]'>
+            <groupfilter function='member' level='[none:commodity_desc:nk]' member='&quot;CORN&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region:nk]' />
+              <groupfilter function='member' level='[none:region:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]'>
+            <groupfilter function='member' level='[none:statisticcat_desc:nk]' member='&quot;YIELD&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[none:year:qk]' included-values='in-range'>
+            <min>2002</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:value:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{01F271BC-261B-48E6-BBDA-C6E8F33D6745}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Wheat Yield</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column caption='Commodity Desc' datatype='string' name='[commodity_desc]' role='dimension' type='nominal' />
+            <column-instance column='[commodity_desc]' derivation='None' name='[none:commodity_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region (regions_eda.csv)]' derivation='None' name='[none:region (regions_eda.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[statisticcat_desc]' derivation='None' name='[none:statisticcat_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Regions' datatype='string' name='[region (regions_eda.csv)]' role='dimension' type='nominal' />
+            <column caption='Statisticcat Desc' datatype='string' name='[statisticcat_desc]' role='dimension' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]'>
+            <groupfilter function='member' level='[none:commodity_desc:nk]' member='&quot;WHEAT&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region (regions_eda.csv):nk]' />
+              <groupfilter function='member' level='[none:region (regions_eda.csv):nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]'>
+            <groupfilter function='member' level='[none:statisticcat_desc:nk]' member='&quot;YIELD&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[none:year:qk]' included-values='in-range'>
+            <min>2002</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:value:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{7B73F727-F02C-4477-B61E-60C4FED0B92D}' />
+    </worksheet>
+    <worksheet name='Sheet 15'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Cotton Yield</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column caption='Commodity Desc' datatype='string' name='[commodity_desc]' role='dimension' type='nominal' />
+            <column-instance column='[commodity_desc]' derivation='None' name='[none:commodity_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region (regions_eda.csv)]' derivation='None' name='[none:region (regions_eda.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[statisticcat_desc]' derivation='None' name='[none:statisticcat_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Regions' datatype='string' name='[region (regions_eda.csv)]' role='dimension' type='nominal' />
+            <column caption='Statisticcat Desc' datatype='string' name='[statisticcat_desc]' role='dimension' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]'>
+            <groupfilter function='member' level='[none:commodity_desc:nk]' member='&quot;COTTON&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region (regions_eda.csv):nk]' />
+              <groupfilter function='member' level='[none:region (regions_eda.csv):nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]'>
+            <groupfilter function='member' level='[none:statisticcat_desc:nk]' member='&quot;YIELD&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[none:year:qk]' included-values='in-range'>
+            <min>2002</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:value:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{A2E2EDB0-A557-4E3A-B1F8-888473F2F3C1}' />
+    </worksheet>
+    <worksheet name='Sheet 16'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Hay Yield</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column caption='Commodity Desc' datatype='string' name='[commodity_desc]' role='dimension' type='nominal' />
+            <column-instance column='[commodity_desc]' derivation='None' name='[none:commodity_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region (regions_eda.csv)]' derivation='None' name='[none:region (regions_eda.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[statisticcat_desc]' derivation='None' name='[none:statisticcat_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Regions' datatype='string' name='[region (regions_eda.csv)]' role='dimension' type='nominal' />
+            <column caption='Statisticcat Desc' datatype='string' name='[statisticcat_desc]' role='dimension' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:commodity_desc:nk]' member='&quot;HAY&quot;' />
+              <groupfilter function='member' level='[none:commodity_desc:nk]' member='&quot;HAY &amp; HAYLAGE&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region (regions_eda.csv):nk]' />
+              <groupfilter function='member' level='[none:region (regions_eda.csv):nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]'>
+            <groupfilter function='member' level='[none:statisticcat_desc:nk]' member='&quot;YIELD&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[none:year:qk]' included-values='in-range'>
+            <min>2002</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:value:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{AB060528-2E74-4CD9-BE65-1FFA52D418C9}' />
+    </worksheet>
+    <worksheet name='Sheet 17'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column-instance column='[region (regions_eda.csv)]' derivation='None' name='[none:region (regions_eda.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[statisticcat_desc]' derivation='None' name='[none:statisticcat_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Regions' datatype='string' name='[region (regions_eda.csv)]' role='dimension' type='nominal' />
+            <column caption='Statisticcat Desc' datatype='string' name='[statisticcat_desc]' role='dimension' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region (regions_eda.csv):nk]' />
+              <groupfilter function='member' level='[none:region (regions_eda.csv):nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]'>
+            <groupfilter function='member' level='[none:statisticcat_desc:nk]' member='&quot;YIELD&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[none:year:qk]' included-values='in-range'>
+            <min>2002</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:value:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</cols>
+        <pages>
+          <column>[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{26B4E901-C734-42A1-B125-5361663FD606}' />
+    </worksheet>
+    <worksheet name='Sheet 18'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column caption='W_Year' datatype='integer' datatype-customized='true' name='[Calculation_2405766665232306176]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='YEAR([Date])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[region (regions_eda.csv)]' derivation='None' name='[none:region (regions_eda.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[statisticcat_desc]' derivation='None' name='[none:statisticcat_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Prcp' datatype='real' name='[prcp]' role='measure' type='quantitative' />
+            <column caption='Regions' datatype='string' name='[region (regions_eda.csv)]' role='dimension' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Statisticcat Desc' datatype='string' name='[statisticcat_desc]' role='dimension' type='nominal' />
+            <column-instance column='[prcp]' derivation='Sum' name='[sum:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2405766665232306176]' derivation='Year-Trunc' name='[tyr:Calculation_2405766665232306176:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]'>
+            <groupfilter function='member' level='[none:statisticcat_desc:nk]' member='&quot;YIELD&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[none:year:qk]' included-values='in-range'>
+            <min>2002</min>
+            <max>2017</max>
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[tyr:Date:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Date:ok]' member='1997' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2002' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2012' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2017' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[tyr:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hrevd103jzom912jo48006503or].[sum:prcp:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' />
+              <color column='[federated.0hrevd103jzom912jo48006503or].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0hrevd103jzom912jo48006503or].[sum:value:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' />
+              <color column='[federated.0hrevd103jzom912jo48006503or].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0hrevd103jzom912jo48006503or].[sum:prcp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' />
+              <color column='[federated.0hrevd103jzom912jo48006503or].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0hrevd103jzom912jo48006503or].[sum:value:qk] + [federated.0hrevd103jzom912jo48006503or].[sum:prcp:qk])</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[tyr:Calculation_2405766665232306176:qk]</cols>
+        <pages>
+          <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{BEC4DD22-17B5-4202-B005-EBC7EECBE5F0}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Max &amp; Min temps</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[tmax]' derivation='Avg' name='[avg:tmax:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tmin]' derivation='Avg' name='[avg:tmin:qk]' pivot='key' type='quantitative' />
+            <column caption='Tmax' datatype='real' name='[tmax]' role='measure' type='quantitative' />
+            <column caption='Tmin' datatype='real' name='[tmin]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0hrevd103jzom912jo48006503or].[avg:tmax:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0hrevd103jzom912jo48006503or].[avg:tmin:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0hrevd103jzom912jo48006503or].[avg:tmax:qk] + [federated.0hrevd103jzom912jo48006503or].[avg:tmin:qk])</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{1880E02A-8CCD-481D-A25E-38C4D6AB1F50}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Tmax by Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[tmax]' derivation='Avg' name='[avg:tmax:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Tmax' datatype='real' name='[tmax]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region:nk]' />
+              <groupfilter function='member' level='[none:region:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[avg:tmax:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{A04D98FB-3CAA-438F-B596-897C19DD87E2}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Tmin by Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[tmin]' derivation='Avg' name='[avg:tmin:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Tmin' datatype='real' name='[tmin]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[avg:tmin:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{142B7152-329C-4BCB-B539-5947132B1C9F}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Prcp by Region - &lt;Page Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[prcp]' derivation='Avg' name='[avg:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[prcp]' derivation='Max' name='[max:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Prcp' datatype='real' name='[prcp]' role='measure' type='quantitative' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0hrevd103jzom912jo48006503or].[avg:prcp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0hrevd103jzom912jo48006503or].[max:prcp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0hrevd103jzom912jo48006503or].[avg:prcp:qk] + [federated.0hrevd103jzom912jo48006503or].[max:prcp:qk])</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</cols>
+        <pages>
+          <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{4C981A14-9FC4-4792-B04C-2B6786684086}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bar Prcp Region - &lt;Page Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[prcp]' derivation='Max' name='[max:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Prcp' datatype='real' name='[prcp]' role='measure' type='quantitative' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[prcp]' derivation='Sum' name='[sum:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region:nk]' />
+              <groupfilter function='member' level='[none:region:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[tyr:Date:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#1996-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#1997-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#1998-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#1999-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2000-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2001-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2002-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2003-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2004-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2005-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2006-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2007-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2008-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2009-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2010-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2011-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2012-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2013-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2014-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2015-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2016-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2017-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2018-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2019-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2020-01-01 00:00:00#' />
+              <groupfilter function='member' level='[tyr:Date:ok]' member='#2021-01-01 00:00:00#' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0hrevd103jzom912jo48006503or].[max:prcp:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[tyr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[sum:prcp:qk]</cols>
+        <pages>
+          <column>[federated.0hrevd103jzom912jo48006503or].[tyr:Date:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{028A2E9B-0F48-4F5E-B9AF-22B42B6AF35D}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Prcp Region All</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[prcp]' derivation='Sum' forecast-column-base='[sum:prcp:qk]' forecast-column-type='forecast-value' name='[fVal:sum:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Prcp' datatype='real' name='[prcp]' role='measure' type='quantitative' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[prcp]' derivation='Sum' name='[sum:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region:nk]' />
+              <groupfilter function='member' level='[none:region:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Date:ok]' member='1997' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2002' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2012' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2017' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]' value='261' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[fVal:sum:prcp:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{56EDF756-8C1D-4C04-9B5E-9C6C3F596A03}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Line Prcp Region - &lt;Page Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Prcp' datatype='real' name='[prcp]' role='measure' type='quantitative' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[prcp]' derivation='Sum' name='[sum:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region:nk]' />
+              <groupfilter function='member' level='[none:region:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Date:ok]' member='1997' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2002' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2012' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2017' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]' value='259' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:prcp:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</cols>
+        <pages>
+          <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{A187D6C9-76D6-405A-B8E8-6EFF1F8D4AAD}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Temp by month - &lt;Page Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[tmax]' derivation='Median' name='[med:tmax:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Tmax' datatype='real' name='[tmax]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region:nk]' />
+              <groupfilter function='member' level='[none:region:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[tmn:Date:qk]' included-values='in-range'>
+            <min>#1970-05-02 00:00:00#</min>
+            <max>#2021-12-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[tmn:Date:qk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[med:tmax:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[tmn:Date:qk]</cols>
+        <pages>
+          <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+        </pages>
+        <percentages enabled='false' mode='row' />
+      </table>
+      <simple-id uuid='{E2190DAC-800C-403C-92C6-2DB43C930B0B}' />
+    </worksheet>
+    <worksheet name='usda'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Soybean Yield</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column caption='Commodity Desc' datatype='string' name='[commodity_desc]' role='dimension' type='nominal' />
+            <column-instance column='[commodity_desc]' derivation='None' name='[none:commodity_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region (regions_eda.csv)]' derivation='None' name='[none:region (regions_eda.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[statisticcat_desc]' derivation='None' name='[none:statisticcat_desc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Regions' datatype='string' name='[region (regions_eda.csv)]' role='dimension' type='nominal' />
+            <column caption='Statisticcat Desc' datatype='string' name='[statisticcat_desc]' role='dimension' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]'>
+            <groupfilter function='member' level='[none:commodity_desc:nk]' member='&quot;SOYBEANS&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region (regions_eda.csv):nk]' />
+              <groupfilter function='member' level='[none:region (regions_eda.csv):nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]'>
+            <groupfilter function='member' level='[none:statisticcat_desc:nk]' member='&quot;YIELD&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0hrevd103jzom912jo48006503or].[none:year:qk]' included-values='in-range'>
+            <min>2002</min>
+            <max>2017</max>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:statisticcat_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:commodity_desc:nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]</column>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:value:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{303125D6-CF4F-4B18-9C65-096FDF8C66D2}' />
+    </worksheet>
+    <worksheet name='weather1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Precipitation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather' name='federated.0hrevd103jzom912jo48006503or' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hrevd103jzom912jo48006503or'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Prcp' datatype='real' name='[prcp]' role='measure' type='quantitative' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[prcp]' derivation='Sum' name='[sum:prcp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:region:nk]' />
+              <groupfilter function='member' level='[none:region:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hrevd103jzom912jo48006503or].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hrevd103jzom912jo48006503or].[sum:prcp:qk]</rows>
+        <cols>[federated.0hrevd103jzom912jo48006503or].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{B52AACC8-655D-461C-93FB-D2D51E99DE52}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='weather1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9D42925C-F207-4774-ADBF-35CA392FB947}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{39A57E10-3135-4C9A-B4FB-9F3736CB190B}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6DC18630-DAE7-40E5-B808-B862FDF206C1}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D77D52B3-5BDA-4115-9D42-574307073CFB}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+            <card pane-specification-id='2' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;SOUTH CENTRAL&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{75847A50-CABC-4B1D-B3A6-266A6DD07693}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2006-01-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{F6E1C1C0-E572-4CB2-ACF1-0D0A20D6F047}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{29A98ACF-CACF-4E23-98E7-C1BA12CD9AC1}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;SOUTH WEST&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{29CE4F2B-B32F-4667-908F-E6BA043B2A04}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0hrevd103jzom912jo48006503or].[tmn:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card type='currpage' />
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;SOUTH EASTERN&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{00702CED-D728-489F-86C8-B7B5F1A6FD49}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;SOUTH WEST&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{CFBA9120-AF17-42EA-ACFA-A95C794AE67C}' />
+    </window>
+    <window class='worksheet' name='usda'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{44A92E22-5D6F-43E8-8581-24AC2C749D65}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6D1E9D69-197F-4BCE-A7AA-8ACA48B10C79}' />
+    </window>
+    <window class='worksheet' name='Sheet 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C0C41A64-9942-47F7-B63D-65DE8AEA51FD}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9D8B7B51-2B9F-4922-8D84-767E58777EB3}' />
+    </window>
+    <window class='worksheet' name='Sheet 15'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{97E91D5F-C8CF-4C43-A734-0DDF33753FB8}' />
+    </window>
+    <window class='worksheet' name='Sheet 16'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{07322D49-BF21-4056-97FA-6B4D11D9ED44}' />
+    </window>
+    <window class='worksheet' name='Sheet 17'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;NORTH EASTERN&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{1E361E9B-997C-4C66-8420-BA44AB912056}' />
+    </window>
+    <window class='worksheet' name='Sheet 18'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0hrevd103jzom912jo48006503or].[none:region (regions_eda.csv):nk]&#10;[federated.0hrevd103jzom912jo48006503or].[:Measure Names]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;SOUTH CENTRAL&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{9686250C-72A1-4CCF-9D58-837BBFCB7A88}' />
+    </window>
+  </windows>
+</workbook>
