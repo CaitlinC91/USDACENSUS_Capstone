@@ -18,3 +18,4 @@ Python/Jupyter Notebooks for analysis and Tableau for visualizations
 Presentation link
 https://www.canva.com/design/DAFmfKLxDgU/84xnYa16dNVCxm1ITto_YQ/edit?utm_content=DAFmfKLxDgU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
+It was such a fun puzzle getting this data into a useable format. I decided to take a pretty broad over view of the data. There are so many little ways to scrutinize these data points and go down narrow detailed avenues. Having a very general audience for this project, I decied to go with the overview approach. 
